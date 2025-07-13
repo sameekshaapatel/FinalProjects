@@ -1,0 +1,193 @@
+{
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #ffffff;
+  height: 80px;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #c1baba;
+}
+.myntra_home {
+  height: 45px;
+}
+.logo_container {
+  margin-left: 4%;
+  display: flex; /* Added to align logo */
+  align-items: center; /* Added to align logo */
+}
+.action_bar {
+  margin-right: 4%;
+}
+.nav_bar {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+}
+.nav_bar a {
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #282c3f;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 28px 0;
+  border-bottom: 4px solid transparent; /* Changed to transparent initially */
+}
+.nav_bar a:hover {
+  border-bottom: 4px solid #f54e77;
+}
+.nav_bar a sup {
+  color:#ff3f6c;
+  font-size: 10px;
+}
+.search_bar{
+  height: 40px; /* Added semicolon */
+  min-width: 200px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  height: 20px;
+  padding: 10px;
+  background-color: #f5f5f6;
+  color:#282c3f;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+}
+.search_input {
+  color:#696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height: 40px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px; /* Added padding for better input experience */
+}
+.action_bar {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-around;
+}
+.action_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Main Section */
+.banner_container {
+  margin: 40px 0;
+}
+.banner_image{
+  width: 100%;
+}
+.category_heading {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 50px;
+  margin: 50px 0 10px 30px;
+  /* max-height: 5em; Removed as it might cut off text */
+  font-weight: 700;
+}
+.category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item_container {
+  width: 250px; /* Same width as sale_item */
+  margin-bottom: 20px; /* Space between items */
+  text-align: center; /* Center button */
+  position: relative; /* For potential future overlays */
+}
+.sale_item{
+  width: 100%; /* Make image fill its container */
+  display: block; /* Remove extra space below image */
+}
+
+/* Wishlist Button */
+.wishlist_btn {
+  background-color: #ff3f6c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist_btn:hover {
+  background-color: #e0355e;
+}
+
+.wishlist_btn.added {
+  background-color: #28a745; /* Green when added */
+  cursor: default;
+}
+
+/* Hidden class for search functionality */
+.hidden {
+  display: none !important;
+}
+
+.footer_container{
+  padding: 30px 0px 40px 0px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_column{
+  display:flex;
+  flex-direction: column;
+}
+.footer_column h3 {
+  color:#282c3f;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.footer_column a {
+  color:#696e79;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.payment_section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+}
+
+#proceedToPaymentBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+#proceedToPaymentBtn:hover {
+  background-color: #0056b3;
+}
+
+.copyright{
+  color: #94969f;
+  text-align: end;
+  padding: 15px;
+}

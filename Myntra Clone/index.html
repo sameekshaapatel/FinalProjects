@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myntra Clone</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
+  family=Material=Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <header>
+    <div class = "logo_container">
+        <a href="a"><img class="myntra_home" src="images/myntralogo.png" alt="Myntra Logo"></a>
+    </div>
+    <nav class = "nav_bar">
+      <a href="a">Men</a>
+      <a href="a">Women</a>
+      <a href="a">Kids</a>
+      <a href="a">Home & Living</a>
+      <a href="a">Beauty</a>
+      <a href="a">Studio <sup>New</sup></a>
+    </nav>
+    <div class = "search_bar">
+      <span class = "material-symbols-outlined search_icon">search</span>
+      <input class ="search_input" placeholder = "Search for products, brands and more">
+      <!-- Search History Container -->
+      <div class="search_history_container hidden">
+        <div class="search_history_header">
+          <h3>Recent Searches</h3>
+          <button id="clearSearchHistory">Clear All</button>
+        </div>
+        <ul id="searchHistoryList">
+          <!-- Search history items will be inserted here by JavaScript -->
+        </ul>
+      </div>
+    </div>
+    <div class = "action_bar">
+        <div class="action_container">
+            <span class="material-symbols-outlined action_icon">person</span>
+            <span class="action_name">Profile</span>
+        </div>
+        
+        <div class="action_container">
+            <span class="material-symbols-outlined action_icon">favorite</span>
+            <span class="action_name">Wishlist</span>
+        </div>
+        <div class="action_container">
+          <span class="material-symbols-outlined"> shopping_bag</span>
+          <span class="action_name">Bag</span>
+        </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner_container">
+      <img class="banner_image" src="images/banner.webp" alt="Main Banner">
+    </div>
+    <div class="category_heading">MEDAL WORTHY BRANDS TO BAG</div>
+    <div class="category_items" id="offerItems">
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/1.jpeg" data-name="Roadster T-Shirt"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/2.jpeg" data-name="HRX Track Pants"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/3.jpeg" data-name="Wrogn Shirt"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/4.jpeg" data-name="Puma Shoes"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/5.jpeg" data-name="Levis Jeans"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/6.jpeg" data-name="Allen Solly Blazer"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/7.jpeg" data-name="Biba Kurta"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/8.jpeg" data-name="Manyavar Sherwani"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/9.jpeg" data-name="Fabindia Saree"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/10.jpeg" data-name="Raymond Suit"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/11.jpeg" data-name="US Polo Assn. Polo"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/offers/12.jpeg" data-name="Nike Sneakers"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+    </div>
+
+    <div class="category_heading">SHOP BY CATEGORY</div>
+    <div class="category_items" id="categoryItems">
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/1.jpeg" data-name="T-Shirts"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/2.jpeg" data-name="Jeans"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/3.jpeg" data-name="Dresses"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/4.jpeg" data-name="Kurtas"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/5.jpeg" data-name="Shoes"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/6.jpeg" data-name="Watches"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/7.jpeg" data-name="Bags"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/8.jpeg" data-name="Jewellery"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/9.jpeg" data-name="Kids Wear"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/10.jpeg" data-name="Home Decor"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/11.jpeg" data-name="Beauty Products"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+      <div class="item_container">
+        <a href="#"><img class="sale_item" src="images/categories/12.jpeg" data-name="Sportswear"></a>
+        <button class="wishlist_btn">Add to Wishlist</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+        <a href="a">Men</a>
+        <a href="a">Women</a>
+        <a href="a">Kids</a>
+        <a href="a">Home & Living</a>
+        <a href="a">Beauty</a>
+        <a href="a">Gift Card</a>
+        <a href="a">Myntra Insider</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>CUSTOMER POLICIES</h3>
+        <a href="a">Contact Us</a>
+        <a href="a">FAQ</a>
+        <a href="a">T&C</a>
+        <a href="a">Terms Of Use</a>
+        <a href="a">Track Orders</a>
+        <a href="a">Shipping</a>
+        <a href="a">Cancellation</a>
+        <a href="a">Returns</a>
+        <a href="a">Privacy Policy</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>USEFUL LINKS</h3>
+        <a href="a">Blog</a>
+        <a href="a">Careers</a>
+        <a href="a">Site Map</a>
+        <a href="a">Corporate Information</a>
+        <a href="a">Whitehat</a>
+      </div>
+    </div>
+    <hr>
+    <div class="payment_section">
+      <button id="proceedToPaymentBtn">Proceed to Payment</button>
+    </div>
+    <div class="copyright">
+      ©️2023 www.myntra.com. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Payment Gateway Modal - Hidden by default -->
+  <div id="paymentModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Simulated Payment Gateway</h2>
+      <form id="paymentForm">
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+        </div>
+        <div class="form-group">
+          <label for="cardName">Card Holder Name:</label>
+          <input type="text" id="cardName" placeholder="John Doe" required>
+        </div>
+        <div class="form-group expiry-cvv">
+          <div class="input-half">
+            <label for="expiryDate">Expiry Date (MM/YY):</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+          </div>
+          <div class="input-half">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="XXX" maxlength="3" required>
+          </div>
+        </div>
+        <button type="submit" id="payNowBtn">Pay Now</button>
+        <p id="paymentMessage" class="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
